@@ -370,7 +370,6 @@ GameObject:
   - component: {fileID: 4323933501538131348}
   - component: {fileID: 4323933501538131349}
   - component: {fileID: 2886984818544066909}
-  - component: {fileID: 3963659450642784949}
   m_Layer: 5
   m_Name: WorkshopMenu
   m_TagString: Untagged
@@ -473,27 +472,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   workshopmenu: {fileID: 4323933501538131346}
-  phoneCaseIndex: 0
-  batteryIndex: 0
-  SIMCardIndex: 0
   playerAgent: {fileID: 0}
   player: {fileID: 0}
-  camerabeh: {fileID: 0}
-  phone: {fileID: 3963659450642784949}
---- !u!114 &3963659450642784949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4323933501538131346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5799c04a6bd4fe3418123cf4b7295f3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: "\u0422\u0435\u043B\u0435\u0444\u043E\u043D"
-  script: {fileID: 0}
+  inventorybeh: {fileID: 0}
+  phone: {fileID: 11400000, guid: 3b182938f7ee2d945bc27078bdc50b21, type: 2}
 --- !u!1 &4323933501555917096
 GameObject:
   m_ObjectHideFlags: 0

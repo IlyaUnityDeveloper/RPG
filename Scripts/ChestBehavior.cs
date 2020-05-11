@@ -9,6 +9,7 @@ public class ChestBehavior : MonoBehaviour
 	private CameraAndInventoryBehavior inventorybeh;
 	[SerializeField]
 	private GameObject player;
+	public Item item;
 	
 	void Start()
 	{
@@ -21,7 +22,7 @@ public class ChestBehavior : MonoBehaviour
 		//Если игрок подошел близко и нажал на сундук, в инвентаре появляется определенная вещь
         if (Vector3.Distance(transform.position, player.transform.position) < 2)
 		{
-			inventorybeh.items.Add(GetComponent<Item>());
+			inventorybeh.items.Add(item);
 			Destroy(gameObject);
 		}
     }

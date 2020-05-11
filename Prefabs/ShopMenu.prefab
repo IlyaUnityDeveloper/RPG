@@ -215,8 +215,6 @@ GameObject:
   - component: {fileID: 4275754049404168066}
   - component: {fileID: 4830766768653187155}
   - component: {fileID: 1851382424692300354}
-  - component: {fileID: 1955906020}
-  - component: {fileID: 1955906021}
   m_Layer: 5
   m_Name: ShopMenu
   m_TagString: Untagged
@@ -323,36 +321,8 @@ MonoBehaviour:
   playerAgent: {fileID: 0}
   player: {fileID: 0}
   inventorybeh: {fileID: 0}
-  armor: {fileID: 1955906021}
-  firesword: {fileID: 1955906020}
---- !u!114 &1955906020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2771635800815867476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5799c04a6bd4fe3418123cf4b7295f3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: "\u041E\u0433\u043D\u0435\u043C\u0435\u0447"
-  script: {fileID: 11500000, guid: f5e69e1eb3d35ac4ab02bed80ed52f31, type: 3}
---- !u!114 &1955906021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2771635800815867476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5799c04a6bd4fe3418123cf4b7295f3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: "\u0411\u0440\u043E\u043D\u044F"
-  script: {fileID: 11500000, guid: 14685379e1759cd438ae23255071f956, type: 3}
+  armor: {fileID: 11400000, guid: f38a9809f4a037b41b200dd0df15baa6, type: 2}
+  firesword: {fileID: 11400000, guid: 5b21b5e8a5550894da6c832323d9a876, type: 2}
 --- !u!1 &5033931760227099421
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEditor;
 
 //Свойства любой вещи
-public class Item : MonoBehaviour
+[CreateAssetMenu(fileName="New Item", menuName="Item", order=51)]
+public class Item : ScriptableObject
 {
     public string name;
 	public MonoScript script;
