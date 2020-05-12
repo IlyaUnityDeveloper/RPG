@@ -432,6 +432,11 @@ PrefabInstance:
       propertyPath: damage
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3205729920262706333, guid: 8b55dae6269603542938ba3ef2074d71,
+        type: 3}
+      propertyPath: health
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8785666346980101739, guid: 8b55dae6269603542938ba3ef2074d71,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1538,7 +1543,7 @@ PrefabInstance:
     - target: {fileID: 3205729920262706333, guid: 8b55dae6269603542938ba3ef2074d71,
         type: 3}
       propertyPath: health
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8785666346980101739, guid: 8b55dae6269603542938ba3ef2074d71,
         type: 3}
@@ -2226,6 +2231,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3205729920262706333, guid: 8b55dae6269603542938ba3ef2074d71,
+        type: 3}
+      propertyPath: health
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8785666346980101739, guid: 8b55dae6269603542938ba3ef2074d71,
         type: 3}
       propertyPath: m_LocalPosition.x

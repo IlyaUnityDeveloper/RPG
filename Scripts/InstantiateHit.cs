@@ -13,7 +13,7 @@ public class InstantiateHit : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             GameObject currentObject = Instantiate(hit, transform.position, transform.rotation);
-			Destroy(currentObject, 1);
+			Destroy(currentObject, 0.5f);
         }
     }
 }

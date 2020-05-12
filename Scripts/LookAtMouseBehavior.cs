@@ -17,7 +17,7 @@ public class LookAtMouseBehavior : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit))
         {
-            transform.LookAt(new Vector3(hit.point.x, 1.25f, hit.point.z));
+            transform.LookAt(new Vector3(hit.point.x, transform.position.y, hit.point.z));
         }
 	}
 }
