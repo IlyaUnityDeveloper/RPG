@@ -22,7 +22,7 @@ public class IDamageable : MonoBehaviour
 	//Нанесение врагу урона
 	public void TakeDamage(float enemyDamage)
 	{
-		enemyStats.health -= enemyDamage * Time.deltaTime;
+		enemyStats.health -= enemyDamage;
 		
 		//Убить врага, если тот потерял здоровье
 		if (enemyStats.health <= Mathf.Epsilon)
@@ -31,12 +31,12 @@ public class IDamageable : MonoBehaviour
 		}
 	}
 	
-    //Нанесение врагу урона, если игрок подошел близко
-	void OnMouseDrag()
-    {
-        if (Vector3.Distance(transform.position, player.transform.position) < 2)
+	//Нанесение врагу урона, если тот подошел к области удара
+    void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.layer == 8)
 		{
 			TakeDamage(playerStats.playerDamage);
 		}
-    }
+	}
 }
