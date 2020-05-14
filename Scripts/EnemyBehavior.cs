@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 //Находится на объектах Enemy
+[RequireComponent(typeof(StatsComponent))]
 public class EnemyBehavior : MonoBehaviour
 {
 	[SerializeField]
