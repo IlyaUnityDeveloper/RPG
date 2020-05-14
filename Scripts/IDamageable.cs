@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Находится на объектах Enemy
+[RequireComponent(typeof(StatsComponent))]
 public class IDamageable : MonoBehaviour
 {
 	[SerializeField]

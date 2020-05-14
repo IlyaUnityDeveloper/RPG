@@ -5,6 +5,7 @@ using UnityEngine.AI;
 using UnityEditor;
 
 //Находится на объекте MainCamera
+[RequireComponent(typeof(PlayerStats))]
 public class CameraAndInventoryBehavior : MonoBehaviour
 {
     public GameObject player; //Объект Character
