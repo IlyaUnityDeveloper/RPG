@@ -36,7 +36,12 @@ public class EnemyBehavior : MonoBehaviour
 		if (Vector3.Distance(transform.position, player.transform.position) < 2)
 		{
 			agent.SetDestination(transform.position);
-			playerStats.TakeDamage(stats.damage);
+			
+			//Нападать на игрока, только если это позволено
+			if (playerStats.takeDamageEnabled)
+			{
+				playerStats.TakeDamage(stats.damage);
+			}
 		}
 	}
 }

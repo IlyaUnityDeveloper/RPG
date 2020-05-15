@@ -20,24 +20,12 @@ public class IDamageable : MonoBehaviour
 		enemyStats = GetComponent<StatsComponent>(); //Получение статов врага
 	}
 	
-	//Нанесение врагу урона
-	public void TakeDamage(float enemyDamage)
-	{
-		enemyStats.health -= enemyDamage * Time.deltaTime;
-		
-		//Убить врага, если тот потерял здоровье
-		if (enemyStats.health <= Mathf.Epsilon)
-		{
-			Destroy(gameObject);
-		}
-	}
-	
     //Нанесение врагу урона, если игрок подошел близко
 	void OnMouseDrag()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) < 2)
+        if ((Vector3.Distance(transform.position, player.transform.position) < 2) && /* Нанесение врагу урона, только если это позволено */ (enemyStats.takeDamageEnabled))
 		{
-			TakeDamage(playerStats.playerDamage);
+			enemyStats.TakeDamage(playerStats.playerDamage);
 		}
     }
 }
